@@ -1,6 +1,111 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+}
+/* navbar zone */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.7s;
+  padding: 30px 20px;
+  z-index: 10;
+}
+header.abajo{
+  background: #a01541 ;
+  padding: 15px 20px;
+}
+header .logo{
+  position: relative;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: 2px;
+  transition: 1.5s;
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li{
+  list-style: none;
+}
+
+header ul li a{
+  position: relative;
+  font-family: helvetica;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.7s;
+}
+
+.fondo-imagen{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(https://mangatschool.com/wp-content/uploads/2021/03/curso-fundamentos-de-programacion-algoritmos.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+header.abajo .logo {
+  color: gold;
+  
+}
+header.abajo ul li a{
+  color: rgba(255, 217, 0, 0.73);
+  font-size: small;
+}
+main {
+  margin-top: 200px; /* Adjust the margin-top value as needed */
+}
+
+
+
+
+/** GRID **/
+.grid {
+  display: grid;
+  gap: 20px; /* Esto añade un espacio de 20px entre las filas */
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Esto crea tres columnas de igual ancho */
+  gap: 20px; /* Esto añade un espacio de 20px entre las columnas */
+}
+
+.column {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+
+
+/* CardZon */
+.card {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 80%;
+  margin: 0px 20px;
 }
