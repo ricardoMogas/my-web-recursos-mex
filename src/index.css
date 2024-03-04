@@ -60,7 +60,7 @@ h2 {
 }
 
 img {
-  height: auto;
-  width: auto;
-  border-radius: 5px;
+  height: 500px;
+  width: 800px;
+  padding: 10px;
 }

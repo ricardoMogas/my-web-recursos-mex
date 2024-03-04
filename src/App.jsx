@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import imagenN1 from './assets/recursosN1.png'
-
+import agropecuarioN1 from './assets/agropecuarioN1.png'
 function App() {
   const [isExpanded, setIsExpanded] = useState(true)
 
@@ -77,38 +77,65 @@ function App() {
 
           <h1 id="desarrollo-agropecuario">2. DESARROLLO AGROPECUARIO</h1>
           <div className='row'>
+            <img src={agropecuarioN1} alt="Imagen de campo" />
             <section className='card'>
               <h2>Desarrollo Agropecuario</h2>
+              <p>
+                El desarrollo agropecuario en México está influenciado por políticas gubernamentales, inversión en tecnología agrícola, y programas de apoyo a los agricultores y ganaderos.
+              </p>
+
               <h3>Desarrollo Industrial</h3>
-              <p>Contenido sobre desarrollo industrial.</p>
+              <p>
+                México tiene una economía industrializada, con sectores como el automotriz, electrónico, manufacturero, entre otros, que contribuyen significativamente al desarrollo económico del país.
+              </p>
+
               <h3>Desarrollo de Servicios</h3>
-              <p>Contenido sobre desarrollo de servicios.</p>
+              <p>
+                El sector servicios en México incluye una amplia gama de actividades, como el turismo, la banca, la educación, la salud, entre otros, que desempeñan un papel importante en la economía del país.
+              </p>
               <h3>Educación</h3>
-              <p>Información sobre educación.</p>
+              <p>
+                México cuenta con un sistema educativo que abarca desde la educación básica hasta la educación superior, con diversos programas y políticas para mejorar la calidad y el acceso a la educación.
+              </p>
               <h3>Salud</h3>
-              <p>Información sobre salud.</p>
+              <p>
+                El sistema de salud mexicano incluye tanto instituciones públicas como privadas, con programas de atención médica, prevención de enfermedades y acceso a servicios de salud para la población.
+              </p>
               <h3>Vivienda y Servicios Públicos</h3>
-              <p>Información sobre vivienda, agua potable y alcantarillado.</p>
+              <p>
+                El acceso a vivienda adecuada y servicios públicos, como agua potable y alcantarillado, es una prioridad en México, con programas gubernamentales para mejorar la infraestructura y garantizar el acceso a estos servicios.
+              </p>
             </section>
           </div>
 
-          <section className='card' id='"otro-contenido'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </section>
         </main>
       </div>
       <footer>
-        <p>Este es el pie de página.</p>
+        <h1>Fuentes</h1>
+        <blockquote>
+          <p>Secretaría de Medio Ambiente y Recursos Naturales [SEMARNAT].</p>
+          <cite>(s.f.). Recuperado de <a href="https://www.gob.mx/semarnat" target="_blank">https://www.gob.mx/semarnat</a></cite>
+        </blockquote>
+        <blockquote>
+          <p>Banco Mundial. (s.f.). México - Overview. Recuperado de <a href="https://www.bancomundial.org/es/country/mexico/overview" target="_blank">https://www.bancomundial.org/es/country/mexico/overview</a></p>
+        </blockquote>
+        <blockquote>
+          <p>Instituto Nacional de Estadística y Geografía (INEGI). (s.f.). INEGI - Instituto Nacional de Estadística y Geografía. Recuperado de <a href="https://www.inegi.org.mx/" target="_blank">https://www.inegi.org.mx/</a></p>
+        </blockquote>
+        <blockquote>
+          <p>Gobierno de México. (s.f.). Recuperado de <a href="https://www.gob.mx" target="_blank">https://www.gob.mx</a></p>
+        </blockquote>
       </footer>
       {/*
         https://www.gob.mx/semarnat
-         https://www.bancomundial.org/es/country/mexico/overview
-          https://www.inegi.org.mx/
+        https://www.bancomundial.org/es/country/mexico/overview
+        https://www.inegi.org.mx/
+
+        https://www.gob.mx/agricultura
+        https://www.gob.mx/conagua
+        https://www.gob.mx/salud
+        http://www.fao.org/mexico
+        https://www.imss.gob.mx/
       */}
     </>
   )
