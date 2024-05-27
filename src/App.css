@@ -91,6 +91,12 @@ main {
   gap: 20px; /* Esto añade un espacio de 20px entre las columnas */
 }
 
+.row-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Esto crea cuatro columnas de igual ancho */
+  gap: 20px; /* Esto añade un espacio de 20px entre las columnas */
+}
+
 .column {
   background-color: #f8f9fa;
   padding: 20px;
@@ -109,6 +115,12 @@ main {
   padding: 20px;
   max-width: 80%;
   margin: 0px 20px;
+  overflow: hidden; /* Asegura que el contenido no exceda el tamaño de la tarjeta */
+}
+
+.card img {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho de la tarjeta */
+  height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* CITAS */
